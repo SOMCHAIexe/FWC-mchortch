@@ -1,0 +1,76 @@
+/* Base page reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: pink;
+}
+
+/* Top Navigation Bar */
+.navbar {
+    background-color: #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Navigation Links List */
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links > li {
+    position: relative; /* Anchor point for the dropdown box */
+}
+
+.nav-links a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 20px 25px;
+    font-size: 16px;
+    transition: background-color 0.2s ease;
+}
+
+.nav-links a:hover {
+    background-color: #444;
+}
+
+/* Hidden Dropdown Box */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%; /* Pushes dropdown directly below header */
+    left: 0;
+    background-color: white;
+    min-width: 180px;
+    list-style: none;
+    margin: 0;
+    padding: 8px 0;
+    border-radius: 0 0 8px 8px; /* Rounded bottom corners */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Soft depth shadow */
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 20px;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: #000;
+}
+
+/* Display trigger on Hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
