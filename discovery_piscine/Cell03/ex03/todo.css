@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Stacks button above ft_list vertically */
+    justify-content: center; /* Centers content vertically */
+    align-items: center;    /* Centers content horizontally */
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+#newBtn {
+    margin: 0;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Container width so new task boxes don't collapse to zero width */
+#ft_list {
+    width: 300px; 
+}
+
+#ft_list div {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    text-align: center; /* Centers text inside each task box */
+}
+
+/* Header container box */
+#header {
+    width: 300px;
+    box-sizing: border-box; /* Includes padding inside 300px width */
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: 1px solid #555;
+    
+    /* Pushes title to left edge and button to right edge */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

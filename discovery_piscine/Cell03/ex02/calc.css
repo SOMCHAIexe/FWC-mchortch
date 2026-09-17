@@ -5,24 +5,31 @@ body {
     justify-content: center;
     align-items: center;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    background-color: black;
 }
 
 .calculator-container {
     display: flex;
     gap: 10px;
     padding: 25px;
-    background-color: #ffffff;
+    background-color: black;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-input[type="text"], select {
+input[type="text"] {
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    width: 120px;
+    width: 200px;
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 70px;
 }
 
 input[type="submit"] {
