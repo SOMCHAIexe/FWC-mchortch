@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+    <script src="calc.js" defer></script>
+</head>
+<body>
+
+    <div class="calculator-container">
+        <!-- Left Operand Input -->
+        <input type="text" id="leftOperand" placeholder="Left number">
+
+        <!-- Operator Selection -->
+        <select id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+        </select>
+
+        <!-- Right Operand Input -->
+        <input type="text" id="rightOperand" placeholder="Right number">
+
+        <!-- Submit Input -->
+        <input type="submit" id="submitBtn" value="Try me!">
+    </div>
+
+</body>
+</html>

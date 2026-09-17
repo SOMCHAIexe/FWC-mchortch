@@ -3,46 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Profile Card</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: pink;
-        }
-
-        /* Invisible table centered on page */
-        table {
-            border: none;
-            border-collapse: collapse;
-            margin: 40px auto;
-            text-align: center;
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-
-            width: 300;
-        }
-
-        td, th {
-            padding:13px 50px;
-        }
-
-        .profile-pic {
-            width: 160px;
-            height: 160px;
-            border-radius: 50%;
-        }
-
-        .social-icon {
-            width: 25px;
-            height: 25px;
-            margin: 0 5px;
-        }
-
-        button {
-            padding: 8px 16px;
-            cursor: pointer;
-        }
-    </style>
+    <link rel="stylesheet" href="card.css">
 </head>
 <body>
 
@@ -50,13 +11,13 @@
     <table>
         <!-- 1. Header on top -->
         <tr>
-            <th><h2>Profile Card</h2></th>
+            <th><h2>User Profile Card</h2></th>
         </tr>
 
         <!-- 2. Profile Picture -->
         <tr>
-            <td>
-                <img src="https://picsum.photos/120" alt="Profile Picture" class="profile-pic">
+            <td style="padding: 0;">
+                <img src="Heart.jpg" alt="Profile Picture" class="profile-pic">
             </td>
         </tr>
 
@@ -73,15 +34,21 @@
         <!-- 5. Social Network Images -->
         <tr>
             <td>
+                <a href="https://www.facebook.com/?locale=th_TH">
                 <img src="https://z-m-static.xx.fbcdn.net/rsrc.php/yt/r/DUiOg0mJTjz.webp" alt="Social 1" class="social-icon">
+                </a>
+                <a href="https://www.instagram.com/?hl=en">
                 <img src="https://www.knmasters.com/wp-content/uploads/2025/03/Instagram_logo_2022.svg" alt="Social 2" class="social-icon">
+                </a>
+                <a href="https://www.line.me/en/">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbEShq5d8ArPmriW-HvvJlVeifX-U-ENp1NYkFvGFKHQ&s=10" alt="Social 3" class="social-icon">
+                </a>
             </td>
         </tr>
 
         <!-- 6. Contact Button -->
         <tr>
-            <td>
+            <td style="padding: 0; background-color: black;">
                 <button type="button">Contact</button>
             </td>
         </tr>
