@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #76C457;
+    color: #333;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    /*floating nav*/
+
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* Forces left group & right links to fill full height */
+    height: 60px;         /* Standardizes header height */
+    background-color: #2A7C13;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #111;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;       /* Displays list items side-by-side in a row */
+    list-style: none;    /* Removes standard bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    display: flex;
+}
+
+.nav-links a {
+    display: flex;
+    align-items: center; /* Centers link text vertically */
+    padding: 0 20px;     /* Left/right padding only */
+    color: #333;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #000;
+    background-color: #3194a1;
+}
+
+main {
+    padding: 40px 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-section {
+    padding: 50px 20px;
+}
+
+/* Left Image Styling */
+.about-image img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;      /* Makes image a circle */
+    object-fit: cover;       /* Keeps image proportions crisp */
+}
+
+/* Right Bio Styling */
+.about-content {
+    flex: 1;                 /* Bio takes up all remaining horizontal space */
+
+}
+
+.about-content h2 {
+    margin-top: 0;
+    color: #222;
+}
+
+.about-content p {
+    color: #555;
+    line-height: 1.6;
+}
+
+h3 {
+    color: #FBE6C2;
+}
